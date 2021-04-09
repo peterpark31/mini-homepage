@@ -1,0 +1,199 @@
+
+.first_container_column2 {
+  font-family: 'KyoboHand'
+  font-size 10px;
+  display:flex;
+  flex: 1.8;
+  flex-direction: column;
+}
+
+.page_title {
+  font-family: 'KOTRA_BOLD-Bold';
+  flex: 0.5;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.link_detail {
+  flex: 0.5;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: right;
+  margin: -10px 3px 0px 0px;
+}
+
+.column2_row1 {
+  flex: 0.1;
+  border-color: transparent;
+  display: flex;
+  flex-direction: row;
+}
+
+.column2_row1_column1 {
+  flex: 0.8;
+  border-color: transparent;
+}
+
+.column2_row1_column2 {
+  flex: 0.6;
+  border-color:transparent;
+}
+
+.column2_row2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1.8;
+  border: 2px solid;
+  border-radius: 9px;
+  border-color: gray;
+  background-color: white;  
+}
+
+.column2_row2_row1 {
+  font-family: 'KOTRA_BOLD-Bold';
+  text-align: bottom;
+  font-size: 13px;
+  flex: 1;
+  border-bottom-style: ridge;
+  border-bottom-width: thin;
+  border-bottom-color: black;
+  margin: 0px 3% 0px 3%;
+}
+
+.column2_row2_row2 {
+  display: flex;
+  flex-direction: row;
+  flex: 5;
+}
+
+.c2_r2_r2_c1 {
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  flex: 1;
+  margin: 3px 5% 0px 3%;
+}
+
+.c2_r2_r2_c2 {
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  flex: 1;
+  margin: 3px 3% 0px 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.c2_r2_r2_c2_c1 {
+  flex:1;
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  border-bottom-style: dashed;
+  border-bottom-width: thin;
+  border-bottom-color: black ;
+  display: flex;
+}
+
+.c2_r2_r2_c2_c2 {
+  flex:1;
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  border-bottom-style: dashed;
+  border-bottom-width: thin;
+  border-bottom-color: black ;
+  display: flex;
+}
+
+.c2_r2_r2_c2_c3 {
+  flex:7;
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  display: flex;
+}
+
+.c2_r2_r2_c2_sub {
+  flex: 0.5;
+}
+
+.column2_row2_row3 {
+  font-family: 'KOTRA_BOLD-Bold';
+  text-align: bottom;
+  font-size: 13px;
+  flex: 1;
+  border-bottom-style: ridge;
+  border-bottom-width: thin;
+  border-bottom-color: black;
+  margin: 0px 3% 0px 3%;
+}
+
+.column2_row2_row4 {
+  display: flex;
+  flex: 10;
+  margin: 3px 3% 3% 3%;
+}
+
+.miniroon {
+  flex:1;
+}
+
+.miniroom_cnt{
+  width: 100%;
+  height: 100%;
+  object-fit: initial;
+  position: static;
+  margin-left: 10px;
+}
+
+.purple_button {
+  line-height: 19px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(19, 0, 141);
+  border-radius: 2px;
+  text-align: center;
+  padding: 1.2px;
+}
+
+.red_button {
+  line-height: 14px;
+  font-size: 13.3px;
+  color: white;
+  background-color: rgb(218, 6, 147);
+  border-radius: 2px;
+  text-align: center;
+  padding: 1.2px;
+}
+
+
+.first_container_column3 {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  background-color: transparent;
+  border-color: transparent;
+  margin-left: -1px;
+  margin-top: 5%;
+  margin-bottom: 70%;
+}
+
+.button1, .button2, .button3, .button4, .button5 {
+  font-family: 'KyoboHand';
+  flex: 1;
+  background-color: mediumspringgreen;
+  color: crimson;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 25px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-right: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button:hover {
+  background-color: black;
+}

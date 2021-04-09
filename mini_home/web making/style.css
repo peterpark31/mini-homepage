@@ -1,0 +1,309 @@
+body {
+    background-color: #a3a3a3;
+    /** body에 배경이미지 적용 */
+    background-image: url("./images/pattern.png");
+    /** 고정된 사이즈로 설정 */
+    background-size: 100px;
+  
+    /** 기본 body 사이즈를 화면 크기로 고정 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .bookcover {
+    /** 배경 색깔 지정  */
+    background-color: #b4d1da;
+    /** 모서리 둥글게 */
+    border-radius: 9px;
+    /** 윤곽선 */
+    border: 1px solid #738086;
+  
+    /** 기본 너비, 높이 지정 (반응형 X) */
+    width: 960px;
+    height: 660px;
+  
+    /** 좌우 마진을 auto(중앙에 배치), 상하 마진을 100px로 지정 */
+    margin: 100px auto;
+  
+    /** .bookdot 요소에서 absolute 속성값을 이용하기 위해 position: relative 로 설정 */
+    position: relative;
+  }
+  
+  .bookdot {
+      width: 940px;
+      height: 640px;
+      border-radius: 9px;
+      border-style:dashed;
+        border-width: 2px;
+      border-color:rgb(255, 255, 255);
+      margin: auto auto;
+      position: absolute;
+       top: 9px;    /*bookdot의 height가 660이고 dashed line의 두께가 2px이므로 그것에서 absoulte 기준으로 10px을 띄우면 아래에서도 10px 띄워지게 됨을 이용*/
+       left: 9px;   /*bookdot의 width가 960이고 dashed line의 두께가 2px이므로 그것에서 absoulte 기준으로 10px을 띄우면 우측에서도 10px 띄워지게 됨을 이용 */
+  }
+
+  .page {
+    width: 930px;
+    height: 630px;
+    background-color: lightgray;
+    border-radius: 9px;
+    position: absolute;
+     top: 5px;    /*bookdot의 height가 640이고, 그것에서 absoulte 기준으로 5px을 띄우면 아래에서도 5px 띄워지게 됨을 이용*/
+     left: 5px;   /*bookdot의 width가 940이고, 그것에서 absoulte 기준으로 5px을 띄우면 우측에서도 5px 띄워지게 됨을 이용 */
+
+     display:flex;
+     padding: 10px 10px 10px 10px;
+     box-sizing: border-box;
+  }
+
+/*container*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');   /*font-family: 'Noto Sans KR', sans-serif;*/
+@font-face {
+  font-family: 'KOTRA_BOLD-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}   
+@font-face {
+  font-family: 'KyoboHand';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeoDunggeunmo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* h1 {font-family: 'KOTRA_BOLD-Bold'} */
+
+.first_container_column1 {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+  padding-right: 15px;
+}
+
+.column1_row1 {
+  flex: 0.1;
+  border-color: transparent;
+  text-align: center;
+}
+
+.img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  position: relative;
+    left:7px;
+}
+
+.today_total {
+  font-family: 'NeoDunggeunmo';
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 3px;
+  }
+
+.today {
+  color: red;
+  font-weight: bold;
+  place-content: right;
+}
+
+.column1_row2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1.8;
+  border: 2px solid;
+  border-radius: 9px;
+  border-color: gray;
+  background-color: white;
+}
+
+.column1_row2_row1 {
+  align-content: center;
+
+  flex: 1;
+  margin: 10%;
+}
+
+.column1_row2_row2 {
+  font-family: 'KyoboHand';
+  font-size: 13px;
+  font-weight: 500;
+  flex: 1.5;
+  margin: 0px 10% 20px 10%;
+}
+
+.column1_row2_row3 {
+  font-family: 'KyoboHand';
+  font-size: 15px;
+  flex: 0.3;
+  margin: 0px 10% 10px 10%;
+}
+
+.first_container_column2 {
+  font-family: 'KyoboHand'
+  font-size: 10px;
+  display:flex;
+  flex: 1.8;
+  flex-direction: column;
+}
+
+.page_title {
+  font-family: 'KOTRA_BOLD-Bold';
+  flex: 0.5;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.link_detail {
+  flex: 0.5;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: right;
+  margin: -10px 3px 0px 0px;
+}
+
+.column2_row1 {
+  flex: 0.1;
+  border-color: transparent;
+  display: flex;
+  flex-direction: row;
+}
+
+.column2_row1_column1 {
+  flex: 0.8;
+  border-color: transparent;
+}
+
+.column2_row1_column2 {
+  flex: 0.6;
+  border-color:transparent;
+}
+
+.column2_row2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1.8;
+  border: 2px solid;
+  border-radius: 9px;
+  border-color: gray;
+  background-color: white;
+}
+
+.column2_row2_row1 {
+  font-family: 'KOTRA_BOLD-Bold';
+  text-align: bottom;
+  font-size: 13px;
+  flex: 1;
+  border-bottom-style: ridge;
+  border-bottom-width: thin;
+  border-bottom-color: black;
+  margin: 0px 3% 0px 3%;
+}
+
+.column2_row2_row2 {
+  display: flex;
+  flex-direction: row;
+  flex: 5;
+}
+
+.c2_r2_r2_c1 {
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  flex: 1;
+  margin: 3px 5% 0px 3%;
+}
+
+.c2_r2_r2_c2 {
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  flex: 1;
+  margin: 3px 3% 0px 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.c2_r2_r2_c2_c1 {
+  flex:1;
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  border-bottom-style: dashed;
+  border-bottom-width: thin;
+  border-bottom-color: black ;
+  display: flex;
+}
+
+.c2_r2_r2_c2_c2 {
+  flex:1;
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  border-bottom-style: dashed;
+  border-bottom-width: thin;
+  border-bottom-color: black ;
+  display: flex;
+}
+
+.c2_r2_r2_c2_c3 {
+  flex:7;
+  font-family: 'KyoboHand';
+  font-size: 12px;
+  display: flex;
+}
+
+.c2_r2_r2_c2_sub {
+  flex: 0.5;
+}
+
+.column2_row2_row3 {
+  font-family: 'KOTRA_BOLD-Bold';
+  text-align: bottom;
+  font-size: 13px;
+  flex: 1;
+  border-bottom-style: ridge;
+  border-bottom-width: thin;
+  border-bottom-color: black;
+  margin: 0px 3% 0px 3%;
+}
+
+.column2_row2_row4 {
+  display: flex;
+  flex: 10;
+  margin: 3px 3% 3% 3%;
+}
+
+.first_container_column3 {
+  flex: 0.3;
+  border: 2px solid;
+  background-color: gray;
+  border-color: transparent;
+  margin-left: 2px;
+}
+
+.purple_button {
+  font-size: 12px;
+  color: white;
+  background-color: rgb(19, 0, 141);
+  border-radius: 2px;
+  text-align: center;
+  padding: 1.2px;
+}
+
+.red_button {
+  font-size: 13.3px;
+  color: white;
+  background-color: rgb(218, 6, 147);
+  border-radius: 2px;
+  text-align: center;
+  padding: 1.2px;
+}
