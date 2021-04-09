@@ -1,0 +1,70 @@
+.guest_book_page {
+    position: absolute;
+    width: 60%;
+    height: 89%;
+    margin-left: -2%;
+    margin-top: 0.5%;
+    overflow-y: auto;
+}
+
+.guest_book_frame {
+    position: relative;
+    top: 0.7rem;
+    left: 5%;
+    height: 13rem;
+    width: 90%;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'KyoboHand';
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.guest_book_title {
+    position: absolute;
+    top: 2%;
+    width: 96%;
+    height: 12%;
+    left: 2%;
+    flex: 1;
+    margin-top: 0px;
+    background-color: lightgray;
+}
+
+.guest_book_box {
+    position: absolute;
+    top: 16%;
+    height: 80%;
+    width: 96%;
+    left: 2%;
+    align-items: left;
+    flex: 4;
+    margin-top: 0px;
+    flex-direction: column;
+}
+
+.guest_book_img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.guest_book_img_setting {
+    width: 100%;
+    background-image: url(./images/mint.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.guest_book_text {
+    position: absolute;
+    flex: 8;
+    margin-left: 35%;
+}
+
+.name_color {
+    color: cornflowerblue;
+    font-size: 18px;
+}
